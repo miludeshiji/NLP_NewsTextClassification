@@ -1,5 +1,7 @@
 /.git
 /.venv
-/processed_data
-/text_data
+processed_data/
+text_data/
+result/
+model/
 /main-副本.py
