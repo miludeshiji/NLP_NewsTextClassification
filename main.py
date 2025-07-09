@@ -78,7 +78,7 @@ def run():
     # --- 4. 模型预测 ---
     print("\n步骤 3/4: 加载模型并进行预测...")
     # 加载已保存的模型权重
-    model.load_state_dict(torch.load(MODEL_PATH))
+    model.load_state_dict(torch.load(MODEL_PATH, weights_only=True))
     predictions = predict(model, test_loader, device)
 
     # --- 5. 生成提交文件 ---
