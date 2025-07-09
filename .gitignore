@@ -1,7 +1,11 @@
 /.git
 /.venv
-processed_data/
-text_data/
-result/
-model/
+processed_data/*
+!processed_data/.gitkeep
+text_data/*
+!text_data/.gitkeep
+result/*
+!result/.gitkeep
+model/*
+!model/.gitkeep
 /main-副本.py
