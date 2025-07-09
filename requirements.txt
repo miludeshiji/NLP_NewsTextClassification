@@ -1,0 +1,17 @@
+numpy
+pandas
+scikit-learn
+jieba
+tqdm
+MarkupSafe == 2.1.5 
+filelock == 3.13.1 
+fsspec == 2024.6.1 
+jinja2 == 3.1.4 
+mpmath == 1.3.0 
+networkx == 3.0 
+pillow == 10.2.0 
+sympy == 1.13.3 
+torch == 2.4.1+cu118 
+torchaudio == 2.4.1+cu118 
+torchvision == 0.19.1+cu118 
+typing-extensions == 4.12.2
