@@ -6,9 +6,9 @@
 1. 到天池[赛题与数据](https://tianchi.aliyun.com/competition/entrance/531810/information)下载数据集并复制到text_data文件夹下
 2. 运行`python -3.8 -m venv .venv`创建python虚拟环境（请确保你有python-3.8版本）。
 3. 运行`.\.venv\Scripts\activate `进入虚拟环境。
-4. 运行`pip install -r requirements.txt`下载环境配置。
-**注意**:此项目的cuda版本为11.8，所以请确保你的cuda也是11.8版本，如果是的话将requirements.txt中的注释取消后再下载环境配置，否则请至pytorch官网下载对应版本的torch。
-5.在虚拟环境中运行`py .\main.py`
+4. 运行`pip install -r requirements.txt`下载环境配置
+    **注意**:此项目的cuda版本为11.8，所以请确保你的cuda也是11.8版本，如果是的话将requirements.txt中的注释取消后再下载环境配置，否则请至pytorch官网下载对应版本的torch。
+    最后在虚拟环境中运行`py .\main.py`即可开始训练。
 
 ---
 ## 文件夹结构

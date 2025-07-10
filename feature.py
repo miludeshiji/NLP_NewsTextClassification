@@ -29,6 +29,11 @@ def preprocess_data(data_dir, processed_dir, max_len=1000):
     train_df = pd.read_csv(os.path.join(data_dir, 'train_set.csv'), sep='\t')
     test_df = pd.read_csv(os.path.join(data_dir, 'test_a.csv'), sep='\t')
 
+    # 如果是调试模式，则只取一小部分数据
+    if debug_mode:
+        print("!!! 处于调试模式，仅使用10000条训练数据 !!!")
+        train_df = train_df.head(10000)
+
     # --- 文本数据转换，并寻找最大词汇ID ---
     max_vocab_idx = 0
     
