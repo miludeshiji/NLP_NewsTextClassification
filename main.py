@@ -27,11 +27,7 @@ def run():
     NUM_CLASSES = 14
     NUM_CHANNELS = 128
     KERNEL_SIZES = [3, 4, 5]
-    MAX_LEN = 4096
-
-    # 启动debug模式
-    # 仅处理部分数据
-    # DEBUG_MODE = True
+    MAX_LEN = 1024
 
     # 训练超参数
     BATCH_SIZE = 64
