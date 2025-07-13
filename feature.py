@@ -34,7 +34,6 @@ def preprocess_data(data_dir, processed_dir, max_len=1000):
     test_texts = text_to_int_list(test_df['text'])
     vocab_size = max_vocab_idx + 1
     print(f"检测到最大词汇ID为: {max_vocab_idx}，因此设置词典大小为: {vocab_size}")
-
     labels = train_df['label'].tolist()
     def pad_sequences(sequences, maxlen, padding_value=0):
         padded_sequences = []

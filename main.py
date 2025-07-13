@@ -19,9 +19,9 @@ def run():
     NUM_CLASSES = 14
     NUM_CHANNELS = 128
     KERNEL_SIZES = [3, 4, 5]
-    MAX_LEN = 1024
+    MAX_LEN = 4096
     BATCH_SIZE = 64
-    EPOCHS = 5
+    EPOCHS = 10
     LEARNING_RATE = 0.001
     print("步骤 1/4: 开始处理数据...")
     train_data, labels, test_data, vocab_size = preprocess_data(DATA_DIR, PROCESSED_DIR, max_len=MAX_LEN)
