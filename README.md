@@ -1,7 +1,7 @@
 # 天池NPL-新闻文本分类
 ## 【AI入门系列】NLP新闻分类学习赛
 * [比赛链接](https://tianchi.aliyun.com/competition/entrance/531810)
-* 结果：0.9323
+* 结果：0.9386
 ---
 ## 运行方法
 1. 到天池[赛题与数据](https://tianchi.aliyun.com/competition/entrance/531810/information)下载数据集并复制到text_data文件夹下
