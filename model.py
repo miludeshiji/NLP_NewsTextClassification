@@ -44,11 +44,13 @@ def train_model(model, train_loader, epochs, learning_rate, device, model_save_p
             progress_bar.set_postfix({'loss': f'{loss.item():.4f}'})
         avg_loss = total_loss / len(train_loader)
         print(f"Epoch {epoch+1}/{epochs} 完成, 平均损失: {avg_loss:.4f}")
+    
     model_dir = os.path.dirname(model_save_path)
     if not os.path.exists(model_dir):
         os.makedirs(model_dir)
     torch.save(model.state_dict(), model_save_path)
     print(f"模型已保存至: {model_save_path}")
+    
 def predict(model, test_loader, device):
     model.to(device)
     model.eval()
